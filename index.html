@@ -5,11 +5,8 @@
   <title>Matix Estate – Turnkey Luxury Apartments</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- Fonts: using similar Google Fonts as fallbacks -->
-  <!-- Selios-style serif → Playfair Display -->
-  <!-- Aileron-style sans → Poppins -->
-  <!-- Fira Code is available directly -->
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600&family=Fira+Code:wght@300;400;500&display=swap" rel="stylesheet" />
+  <!-- Modern fonts: headings/body = Space Grotesk + Inter, labels = Fira Code -->
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600&family=Inter:wght@300;400;500;600&family=Fira+Code:wght@300;400;500&display=swap" rel="stylesheet" />
 
   <style>
     :root {
@@ -17,8 +14,8 @@
       --oak-soft: #f3e7d4;
       --background: #f8f5f1;   /* soft off-white */
       --white: #ffffff;
-      --text-main: #2f2b25;
-      --text-muted: #7b746b;
+      --text-main: #23201b;
+      --text-muted: #8a837a;
       --accent: #b18c5a;
       --border-soft: #e3d7c7;
       --shadow-soft: 0 18px 40px rgba(26, 19, 9, 0.06);
@@ -38,7 +35,7 @@
     }
 
     body {
-      font-family: "Poppins", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
       background: var(--background);
       color: var(--text-main);
       line-height: 1.6;
@@ -75,8 +72,8 @@
 
     .nav.scrolled {
       background: rgba(248, 245, 241, 0.97);
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
-      backdrop-filter: blur(8px);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+      backdrop-filter: blur(10px);
     }
 
     .nav-inner {
@@ -90,36 +87,36 @@
     }
 
     .nav-logo {
-      font-family: "Playfair Display", "Times New Roman", serif; /* Selios-style */
-      font-weight: 600;
+      font-family: "Space Grotesk", system-ui, sans-serif;
+      font-weight: 500;
       letter-spacing: 0.05em;
       text-transform: uppercase;
-      font-size: 0.9rem;
+      font-size: 0.95rem;
     }
 
     .nav-logo span {
       display: block;
-      font-size: 0.7rem;
+      font-size: 0.72rem;
       font-weight: 400;
       text-transform: none;
       color: var(--text-muted);
-      letter-spacing: 0.16em;
-      margin-top: 0.1rem;
+      letter-spacing: 0.1em;
+      margin-top: 0.12rem;
     }
 
     .nav-links {
       display: flex;
       align-items: center;
-      gap: 1.8rem;
+      gap: 1.6rem;
       font-size: 0.9rem;
     }
 
     .nav-links a {
       position: relative;
-      font-family: "Fira Code", monospace; /* small text */
+      font-family: "Inter", system-ui, sans-serif;
       font-size: 0.8rem;
       text-transform: uppercase;
-      letter-spacing: 0.16em;
+      letter-spacing: 0.14em;
       color: var(--text-muted);
       padding-bottom: 0.25rem;
     }
@@ -148,7 +145,7 @@
       padding: 0.45rem 0.8rem;
       background: rgba(248, 245, 241, 0.8);
       font-size: 0.7rem;
-      letter-spacing: 0.16em;
+      letter-spacing: 0.14em;
       text-transform: uppercase;
       font-family: "Fira Code", monospace;
       cursor: pointer;
@@ -165,10 +162,10 @@
     }
 
     .nav-links-mobile a {
-      font-family: "Fira Code", monospace;
-      font-size: 0.75rem;
+      font-family: "Inter", system-ui, sans-serif;
+      font-size: 0.8rem;
       text-transform: uppercase;
-      letter-spacing: 0.14em;
+      letter-spacing: 0.12em;
       color: var(--text-main);
     }
 
@@ -181,7 +178,7 @@
     .hero {
       position: relative;
       padding-top: 110px; /* offset for nav */
-      min-height: 90vh;
+      min-height: 88vh;
       display: flex;
       align-items: center;
       background: radial-gradient(circle at top left, #f0e4d3, #f8f5f1 55%, #f1e6d7 100%);
@@ -189,15 +186,14 @@
     }
 
     .hero::before {
-      /* subtle gradient overlay shape */
       content: "";
       position: absolute;
       right: -140px;
       top: -140px;
       width: 380px;
       height: 380px;
-      background: radial-gradient(circle, rgba(220, 196, 160, 0.3), transparent 70%);
-      opacity: 0.8;
+      background: radial-gradient(circle, rgba(220, 196, 160, 0.25), transparent 70%);
+      opacity: 0.9;
       pointer-events: none;
     }
 
@@ -211,35 +207,41 @@
     .hero-copy-eyebrow {
       font-family: "Fira Code", monospace;
       text-transform: uppercase;
-      letter-spacing: 0.26em;
+      letter-spacing: 0.18em;
       font-size: 0.7rem;
       color: var(--text-muted);
       margin-bottom: 0.9rem;
     }
 
     .hero-title {
-      font-family: "Playfair Display", "Times New Roman", serif;
-      font-weight: 600;
-      font-size: clamp(2.4rem, 3.4vw, 3.4rem);
-      line-height: 1.12;
-      letter-spacing: 0.02em;
+      font-family: "Space Grotesk", system-ui, sans-serif;
+      font-weight: 500;
+      font-size: clamp(2.2rem, 3.2vw, 3.1rem);
+      line-height: 1.08;
+      letter-spacing: 0.01em;
       margin-bottom: 0.4rem;
     }
 
     .hero-subtitle {
-      font-family: "Poppins", system-ui, sans-serif;
-      font-size: 1rem;
-      text-transform: uppercase;
-      letter-spacing: 0.18em;
+      font-family: "Inter", system-ui, sans-serif;
+      font-size: 0.95rem;
+      text-transform: none;
+      letter-spacing: 0.12em;
       color: var(--text-muted);
       margin-bottom: 1.4rem;
+      text-transform: uppercase;
     }
 
     .hero-body {
       font-size: 0.95rem;
       max-width: 32rem;
       color: var(--text-main);
-      margin-bottom: 1.8rem;
+      margin-bottom: 1.4rem;
+    }
+
+    .hero-body + .hero-body {
+      margin-top: 0.4rem;
+      color: var(--text-muted);
     }
 
     .hero-ctas {
@@ -260,38 +262,38 @@
       font-size: 0.8rem;
       text-transform: uppercase;
       letter-spacing: 0.16em;
-      font-family: "Fira Code", monospace;
+      font-family: "Inter", system-ui, sans-serif;
       cursor: pointer;
       border: 1px solid transparent;
       transition: background-color var(--transition-fast), color var(--transition-fast), box-shadow var(--transition-fast), border-color var(--transition-fast), transform var(--transition-fast);
     }
 
     .btn-primary {
-      background: var(--accent);
-      color: #fff;
-      box-shadow: 0 18px 45px rgba(138, 94, 40, 0.35);
+      background: #111111;
+      color: #f7f7f7;
+      box-shadow: 0 14px 30px rgba(0, 0, 0, 0.22);
     }
 
     .btn-primary:hover {
       transform: translateY(-1px);
-      box-shadow: 0 22px 45px rgba(138, 94, 40, 0.45);
+      box-shadow: 0 18px 36px rgba(0, 0, 0, 0.3);
     }
 
     .btn-ghost {
-      background: rgba(255, 255, 255, 0.65);
-      color: var(--text-main);
-      border-color: rgba(177, 140, 90, 0.3);
+      background: rgba(255, 255, 255, 0.7);
+      color: #171717;
+      border-color: rgba(0, 0, 0, 0.06);
     }
 
     .btn-ghost:hover {
-      background: #fff;
-      border-color: rgba(177, 140, 90, 0.55);
+      background: #ffffff;
+      border-color: rgba(0, 0, 0, 0.16);
       box-shadow: 0 12px 28px rgba(26, 19, 9, 0.06);
     }
 
     .hero-note {
-      margin-top: 1.3rem;
-      font-size: 0.75rem;
+      margin-top: 1.1rem;
+      font-size: 0.78rem;
       font-family: "Fira Code", monospace;
       color: var(--text-muted);
       letter-spacing: 0.08em;
@@ -307,8 +309,8 @@
 
     .hero-card {
       position: relative;
-      background: rgba(255, 255, 255, 0.86);
-      border-radius: 26px;
+      background: rgba(255, 255, 255, 0.9);
+      border-radius: 22px;
       padding: 1.4rem 1.4rem 1.3rem;
       box-shadow: var(--shadow-soft);
       border: 1px solid rgba(227, 215, 199, 0.7);
@@ -319,21 +321,22 @@
 
     .hero-card-tag {
       font-family: "Fira Code", monospace;
-      font-size: 0.65rem;
-      letter-spacing: 0.18em;
+      font-size: 0.67rem;
+      letter-spacing: 0.16em;
       text-transform: uppercase;
       color: var(--text-muted);
       margin-bottom: 0.7rem;
     }
 
     .hero-card-title {
-      font-family: "Playfair Display", "Times New Roman", serif;
-      font-size: 1.35rem;
-      margin-bottom: 0.75rem;
+      font-family: "Space Grotesk", system-ui, sans-serif;
+      font-size: 1.2rem;
+      font-weight: 500;
+      margin-bottom: 0.6rem;
     }
 
     .hero-card-sub {
-      font-size: 0.8rem;
+      font-size: 0.82rem;
       color: var(--text-muted);
       margin-bottom: 1rem;
     }
@@ -342,7 +345,7 @@
       display: flex;
       flex-wrap: wrap;
       gap: 0.4rem;
-      margin-bottom: 1.2rem;
+      margin-bottom: 1.1rem;
     }
 
     .pill {
@@ -353,7 +356,7 @@
       letter-spacing: 0.09em;
       text-transform: uppercase;
       border: 1px solid rgba(227, 215, 199, 0.9);
-      background: rgba(248, 245, 241, 0.85);
+      background: rgba(248, 245, 241, 0.9);
       color: var(--text-muted);
     }
 
@@ -388,44 +391,41 @@
       text-transform: uppercase;
       letter-spacing: 0.18em;
       font-size: 0.6rem;
-      background: var(--oak-soft);
-      color: var(--text-main);
+      background: #111111;
+      color: #f6f6f6;
     }
 
     /* SECTIONS */
 
     section {
-      padding: 4.5rem 0;
-    }
-
-    section:nth-of-type(odd) {
-      background: transparent;
+      padding: 4.1rem 0;
     }
 
     .section-header {
       max-width: 700px;
-      margin: 0 auto 2.5rem;
+      margin: 0 auto 2.2rem;
       text-align: center;
     }
 
     .section-eyebrow {
       font-family: "Fira Code", monospace;
       text-transform: uppercase;
-      letter-spacing: 0.22em;
+      letter-spacing: 0.18em;
       font-size: 0.7rem;
       color: var(--text-muted);
-      margin-bottom: 0.7rem;
+      margin-bottom: 0.55rem;
     }
 
     .section-title {
-      font-family: "Playfair Display", "Times New Roman", serif;
-      font-size: 1.7rem;
-      margin-bottom: 0.5rem;
-      letter-spacing: 0.03em;
+      font-family: "Space Grotesk", system-ui, sans-serif;
+      font-size: 1.6rem;
+      font-weight: 500;
+      margin-bottom: 0.35rem;
+      letter-spacing: 0.01em;
     }
 
     .section-subtitle {
-      font-size: 0.95rem;
+      font-size: 0.93rem;
       color: var(--text-muted);
     }
 
@@ -439,8 +439,8 @@
     }
 
     .overview-text-main {
-      font-size: 0.98rem;
-      margin-bottom: 1.5rem;
+      font-size: 0.96rem;
+      margin-bottom: 1.3rem;
     }
 
     .overview-text-secondary {
@@ -468,17 +468,18 @@
       text-transform: uppercase;
       letter-spacing: 0.14em;
       color: var(--text-muted);
-      margin-bottom: 0.4rem;
+      margin-bottom: 0.35rem;
     }
 
     .feature-card-title {
+      font-family: "Space Grotesk", system-ui, sans-serif;
       font-weight: 500;
-      margin-bottom: 0.35rem;
-      font-size: 0.95rem;
+      margin-bottom: 0.3rem;
+      font-size: 0.96rem;
     }
 
     .feature-card-text {
-      font-size: 0.85rem;
+      font-size: 0.84rem;
       color: var(--text-muted);
     }
 
@@ -502,7 +503,7 @@
     .slideshow-image-container {
       position: relative;
       overflow: hidden;
-      height: clamp(200px, 40vh, 360px); /* slightly shorter for a compact page */
+      height: clamp(200px, 40vh, 360px);
     }
 
     .slide {
@@ -577,7 +578,7 @@
       border-radius: 999px;
       background: rgba(177, 140, 90, 0.35);
       cursor: pointer;
-      transition: width var(--transition-fast), background-color var(--transition-fast), transform var(--transition-fast);
+      transition: width var(--transition-fast), background-color var(--transition-fast);
     }
 
     .dot.active {
@@ -604,7 +605,7 @@
     }
 
     .investment-copy p + p {
-      margin-top: 0.9rem;
+      margin-top: 0.85rem;
       color: var(--text-muted);
       font-size: 0.9rem;
     }
@@ -626,7 +627,7 @@
       font-family: "Fira Code", monospace;
       font-size: 0.7rem;
       text-transform: uppercase;
-      letter-spacing: 0.18em;
+      letter-spacing: 0.16em;
       color: var(--text-muted);
     }
 
@@ -672,7 +673,7 @@
 
     .inquiry-card {
       background: var(--white);
-      border-radius: 24px;
+      border-radius: 20px;
       border: 1px solid var(--border-soft);
       box-shadow: var(--shadow-soft);
       padding: 1.8rem 1.7rem 1.7rem;
@@ -695,7 +696,7 @@
       font-family: "Fira Code", monospace;
       font-size: 0.7rem;
       text-transform: uppercase;
-      letter-spacing: 0.16em;
+      letter-spacing: 0.14em;
       color: var(--text-muted);
     }
 
@@ -706,14 +707,14 @@
       border: 1px solid rgba(227, 215, 199, 0.9);
       padding: 0.7rem 0.9rem;
       font-size: 0.9rem;
-      font-family: "Poppins", system-ui, sans-serif;
+      font-family: "Inter", system-ui, sans-serif;
       background: #fbf8f4;
       outline: none;
       transition: border-color var(--transition-fast), box-shadow var(--transition-fast), background-color var(--transition-fast);
     }
 
     .form-textarea {
-      border-radius: 16px;
+      border-radius: 14px;
       min-height: 110px;
       resize: vertical;
     }
@@ -721,8 +722,8 @@
     .form-input:focus,
     .form-select:focus,
     .form-textarea:focus {
-      border-color: var(--accent);
-      box-shadow: 0 0 0 1px rgba(177, 140, 90, 0.35);
+      border-color: #111111;
+      box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2);
       background: #ffffff;
     }
 
@@ -776,7 +777,7 @@
       align-items: center;
       gap: 0.4rem;
       cursor: pointer;
-      font-family: "Poppins", system-ui, sans-serif;
+      font-family: "Inter", system-ui, sans-serif;
     }
 
     .checkbox-group input[type="radio"] {
@@ -826,8 +827,8 @@
       width: 26px;
       height: 26px;
       border-radius: 999px;
-      background: linear-gradient(135deg, var(--oak-soft), #ffffff);
-      border: 1px solid rgba(177, 140, 90, 0.4);
+      background: #111111;
+      color: #f7f7f7;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -835,6 +836,7 @@
     }
 
     .why-title {
+      font-family: "Space Grotesk", system-ui, sans-serif;
       font-size: 0.9rem;
       font-weight: 500;
     }
@@ -867,7 +869,7 @@
       gap: 1.2rem;
       font-family: "Fira Code", monospace;
       text-transform: uppercase;
-      letter-spacing: 0.18em;
+      letter-spacing: 0.16em;
       font-size: 0.7rem;
     }
 
@@ -876,7 +878,7 @@
     }
 
     .footer-links a:hover {
-      border-color: rgba(177, 140, 90, 0.5);
+      border-color: rgba(0, 0, 0, 0.2);
     }
 
     /* RESPONSIVE */
@@ -888,7 +890,7 @@
       }
 
       .hero {
-        padding-bottom: 3.5rem;
+        padding-bottom: 3.1rem;
       }
 
       .hero-visual {
@@ -923,7 +925,7 @@
       }
 
       .section-title {
-        font-size: 1.5rem;
+        font-size: 1.45rem;
       }
 
       .feature-card-grid {
@@ -999,40 +1001,39 @@
       <div>
         <div class="hero-copy-eyebrow">We know seaside &amp; holiday real estate</div>
         <h1 class="hero-title">Matix Estate Turnkey Luxury Apartments</h1>
-        <div class="hero-subtitle">Turnkey Holiday &amp; Seaside Property Investment</div>
+        <div class="hero-subtitle">Holiday &amp; seaside property, handled end-to-end</div>
         <p class="hero-body">
           Specializing in holiday real estate, we are always looking to expand our offerings to meet the needs of growing
-          companies and private investors. Matix Estate is specialised in some of the world’s most desirable coastal markets:
-          Ibiza, Spain · Black Sea, Bulgaria · Palm Beach, Florida.
+          companies and private investors.
         </p>
         <p class="hero-body">
-          From sourcing to furnishing and management, our turnkey apartments are designed to be effortless to own and
-          compelling to stay in—no matter where in Europe or the U.S. your next investment lives.
+          Focused on high-demand markets like Ibiza, Spain · Black Sea, Bulgaria · Palm Beach, Florida and beyond, Matix Estate
+          delivers modern apartments that are effortless to own and compelling to stay in.
         </p>
         <div class="hero-ctas">
-          <a href="#inquiry" class="btn-primary">Request Investment Details</a>
+          <a href="#inquiry" class="btn-primary">Request Details</a>
           <a href="#gallery" class="btn-ghost">View Property Preview</a>
         </div>
         <div class="hero-note">
-          Prime coastal locations · Managed on your behalf · Lifestyle &amp; income combined
+          Prime locations · Full management · Lifestyle &amp; income
         </div>
       </div>
 
       <div class="hero-visual">
         <article class="hero-card">
-          <div class="hero-card-tag">Sample Residence Snapshot</div>
-          <h2 class="hero-card-title">Sea-facing, Turnkey Apartment</h2>
+          <div class="hero-card-tag">Sample residence</div>
+          <h2 class="hero-card-title">Sea-facing, turnkey apartment</h2>
           <p class="hero-card-sub">
-            South-facing one-bedroom with panoramic terrace, crafted with natural oak, limestone, and soft coastal tones.
+            One-bedroom with panoramic terrace, natural oak, and soft coastal tones—delivered fully furnished and ready for guests.
           </p>
           <div class="hero-card-pills">
-            <span class="pill">Prime Coastal Zone</span>
-            <span class="pill">Professionally Managed</span>
-            <span class="pill">Furnished &amp; Equipped</span>
+            <span class="pill">Prime coastal zone</span>
+            <span class="pill">Managed for you</span>
+            <span class="pill">Furnished &amp; styled</span>
           </div>
           <div class="hero-card-footer">
             <div>
-              <span class="label">Illustrative entry range</span>
+              <span class="label">Illustrative entry</span>
               <span class="value">$0 – $250,000</span>
             </div>
             <div>
@@ -1051,10 +1052,10 @@
     <div class="wrapper">
       <header class="section-header">
         <div class="section-eyebrow">Overview</div>
-        <h2 class="section-title">Luxury Seaside Real Estate</h2>
+        <h2 class="section-title">Luxury seaside real estate</h2>
         <p class="section-subtitle">
-          A discreet, design-led portfolio of apartments curated for long-term capital preservation and effortless income
-          across Europe and select U.S. coastal markets.
+          A design-led portfolio of apartments curated for long-term capital preservation and effortless income across Europe
+          and select U.S. coastal markets.
         </p>
       </header>
 
@@ -1062,13 +1063,12 @@
         <div>
           <p class="overview-text-main">
             Matix Estate Turnkey Luxury Apartments brings together architecture, interior design, and hotel-grade management
-            in one seamless investment. Each residence is delivered fully furnished and styled, from bespoke joinery to
-            soft textiles, so your unit is ready to welcome guests or residents from day one.
+            in one seamless investment. Each residence is delivered fully furnished, styled, and ready to welcome guests from day one.
           </p>
           <p class="overview-text-secondary">
-            Whether the property is set above the Black Sea, overlooking the coves of Ibiza, or just steps from the sand in
+            Whether the property sits above the Black Sea, overlooking the coves of Ibiza, or just steps from the sand in
             Palm Beach, our focus is the same: calm, contemporary apartments with strong rental appeal and a smooth ownership
-            experience. Our team handles the entire process on your behalf, from acquisition and fit-out to rental management.
+            experience. From sourcing and due diligence to furnishing and day-to-day operations, we manage the details so you don’t have to.
           </p>
         </div>
 
@@ -1076,33 +1076,33 @@
           <div class="feature-card-grid">
             <article class="feature-card">
               <div class="feature-card-label">Offering</div>
-              <h3 class="feature-card-title">Fully Furnished Residences</h3>
+              <h3 class="feature-card-title">Fully furnished residences</h3>
               <p class="feature-card-text">
-                Curated interiors with natural oak, stone, and linen textures so each apartment feels like a boutique hotel suite.
+                Natural oak, stone, and soft textiles create a timeless, neutral base that photographs well and ages gracefully.
               </p>
             </article>
 
             <article class="feature-card">
               <div class="feature-card-label">Management</div>
-              <h3 class="feature-card-title">Professional Operations</h3>
+              <h3 class="feature-card-title">On-the-ground operations</h3>
               <p class="feature-card-text">
-                On-the-ground partners coordinate check-ins, housekeeping, maintenance, and reporting—so you don’t have to.
+                Local partners handle check-ins, housekeeping, maintenance, and reporting, with a single point of contact for you.
               </p>
             </article>
 
             <article class="feature-card">
               <div class="feature-card-label">Location</div>
-              <h3 class="feature-card-title">Prime Coastal Addresses</h3>
+              <h3 class="feature-card-title">Prime coastal addresses</h3>
               <p class="feature-card-text">
-                Hand-picked micro-locations close to the sea, dining, and key amenities to support strong year-round demand.
+                Micro-locations selected for walkability, views, and long-term rental desirability in established and rising markets.
               </p>
             </article>
 
             <article class="feature-card">
               <div class="feature-card-label">Demand</div>
-              <h3 class="feature-card-title">High Rental Interest</h3>
+              <h3 class="feature-card-title">High guest appeal</h3>
               <p class="feature-card-text">
-                Modern, design-led apartments sit at the top of local demand, attracting both short-stay visitors and medium-term residents.
+                Modern, design-led apartments sit at the top of local demand, attracting both short-stay visitors and extended stays.
               </p>
             </article>
           </div>
@@ -1111,14 +1111,14 @@
     </div>
   </section>
 
-  <!-- GALLERY / SLIDESHOW (kept compact for property-detail usage) -->
+  <!-- GALLERY / SLIDESHOW (compact property preview) -->
   <section id="gallery" class="gallery">
     <div class="wrapper">
       <header class="section-header">
         <div class="section-eyebrow">Gallery</div>
-        <h2 class="section-title">Property Preview</h2>
+        <h2 class="section-title">Property preview</h2>
         <p class="section-subtitle">
-          A short visual snapshot of this apartment. Replace the placeholders with the key hero images for this specific listing.
+          A short visual snapshot of this apartment. Replace the placeholders with the hero shots for this specific listing.
         </p>
       </header>
 
@@ -1151,7 +1151,7 @@
     <div class="wrapper">
       <header class="section-header">
         <div class="section-eyebrow">Investment</div>
-        <h2 class="section-title">Investment Structure</h2>
+        <h2 class="section-title">Investment structure</h2>
         <p class="section-subtitle">
           Flexible entry points designed for both first-time international investors and seasoned portfolio builders.
         </p>
@@ -1160,13 +1160,13 @@
       <div class="investment-layout">
         <div class="investment-copy">
           <p>
-            Matix Estate offers a tiered approach to entry capital, allowing you to select the level that best
-            aligns with your strategy—whether you are looking for a single seaside pied-à-terre, a dedicated rental unit, or
-            a small cluster of apartments across multiple destinations.
+            Matix Estate offers a tiered approach to entry capital, allowing you to select the level that best aligns with your
+            strategy—whether you’re targeting a single seaside pied-à-terre or a small cluster of units across multiple cities.
           </p>
           <p>
-            Each range represents a typical total project budget, inclusive of acquisition, design, furnishing, and operational setup.
-            Our team will work alongside you to allocate capital efficiently and outline an expected rental profile before you commit.
+            Each range reflects a typical total project budget, including acquisition, design, furnishing, and operational setup.
+            Before you commit, we work through expected rental performance and usage so the apartment fits both your financial
+            targets and lifestyle expectations.
           </p>
         </div>
 
@@ -1180,13 +1180,13 @@
             <div class="investment-row">
               <div class="investment-range">$0 – $50,000</div>
               <div class="investment-description">
-                Initial allocation suitable for reservation fees, design contributions, or co-investment structures with other partners.
+                Suitable for reservation fees, design contributions, or co-investment structures alongside other partners.
               </div>
             </div>
             <div class="investment-row">
               <div class="investment-range">$50,000 – $100,000</div>
               <div class="investment-description">
-                Ideal for partial ownership or compact turnkey studios in emerging micro-locations with strong seasonal rental demand.
+                Ideal for compact turnkey studios or fractional positions in high-demand coastal buildings.
               </div>
             </div>
             <div class="investment-row">
@@ -1198,13 +1198,13 @@
             <div class="investment-row">
               <div class="investment-range">$250,000 – $500,000</div>
               <div class="investment-description">
-                Suitable for multiple units or a signature residence with expansive terraces and stronger long-stay rental potential.
+                Suitable for multiple units or a signature residence with expansive outdoor space and stronger long-stay potential.
               </div>
             </div>
             <div class="investment-row">
               <div class="investment-range">$500,000 – $1,000,000</div>
               <div class="investment-description">
-                For investors seeking a curated mini-portfolio—stacked apartments or several residences across different locations.
+                For investors seeking a curated mini-portfolio—stacked apartments or several residences across different markets.
               </div>
             </div>
           </div>
@@ -1218,7 +1218,7 @@
     <div class="wrapper">
       <header class="section-header">
         <div class="section-eyebrow">Inquiry</div>
-        <h2 class="section-title">Investment Inquiry</h2>
+        <h2 class="section-title">Investment inquiry</h2>
       </header>
 
       <p class="inquiry-intro">
@@ -1229,22 +1229,22 @@
         <form class="inquiry-card" id="inquiryForm" novalidate>
           <div class="form-grid">
             <div class="form-field">
-              <label class="form-label" for="fullName">Full Name *</label>
+              <label class="form-label" for="fullName">Full name *</label>
               <input id="fullName" name="fullName" type="text" class="form-input" required />
             </div>
 
             <div class="form-field">
-              <label class="form-label" for="phone">Phone Number *</label>
+              <label class="form-label" for="phone">Phone number *</label>
               <input id="phone" name="phone" type="tel" class="form-input" required />
             </div>
 
             <div class="form-field">
-              <label class="form-label" for="email">Email Address *</label>
+              <label class="form-label" for="email">Email address *</label>
               <input id="email" name="email" type="email" class="form-input" required />
             </div>
 
             <div class="form-field">
-              <label class="form-label" for="investmentAmount">Investment Amount *</label>
+              <label class="form-label" for="investmentAmount">Investment amount *</label>
               <select id="investmentAmount" name="investmentAmount" class="form-select" required>
                 <option value="">Select a range</option>
                 <option>$0 – $50,000</option>
@@ -1258,7 +1258,7 @@
 
           <div class="form-grid">
             <div class="form-field">
-              <span class="form-label">Purpose of Buying *</span>
+              <span class="form-label">Purpose of buying *</span>
               <div class="checkbox-group" id="purposeGroup">
                 <label>
                   <input type="radio" name="purpose" value="Investment" />
@@ -1276,13 +1276,13 @@
             </div>
 
             <div class="form-field">
-              <label class="form-label" for="message">Message / Additional Notes</label>
+              <label class="form-label" for="message">Message / notes</label>
               <textarea id="message" name="message" class="form-textarea" placeholder="Share any timing, location, or lifestyle preferences (optional)."></textarea>
             </div>
           </div>
 
           <div class="form-footer">
-            <button type="submit" class="btn-primary">Submit Inquiry</button>
+            <button type="submit" class="btn-primary">Submit inquiry</button>
             <div class="form-hint">
               Your details are handled confidentially and used only to respond to your inquiry.
             </div>
@@ -1299,41 +1299,41 @@
   <section id="why-invest" class="why-invest">
     <div class="wrapper">
       <header class="section-header">
-        <div class="section-eyebrow">Why Invest?</div>
-        <h2 class="section-title">Why Invest?</h2>
+        <div class="section-eyebrow">Why invest?</div>
+        <h2 class="section-title">Why Matix Estate</h2>
       </header>
 
       <div class="why-layout">
-        <div class="why-subtitle">Turnkey Luxury Property Investment.</div>
+        <div class="why-subtitle">Turnkey luxury property investment.</div>
 
         <div class="why-grid">
           <article class="why-card">
-            <div class="why-icon">◎</div>
-            <h3 class="why-title">Hands-Off Management</h3>
+            <div class="why-icon">M</div>
+            <h3 class="why-title">Hands-off management</h3>
             <p class="why-text">
               From guest changeovers to maintenance and reporting, a local management team handles operations end-to-end on your behalf.
             </p>
           </article>
 
           <article class="why-card">
-            <div class="why-icon">₪</div>
-            <h3 class="why-title">Growing Tourism Markets</h3>
+            <div class="why-icon">E</div>
+            <h3 class="why-title">Established markets</h3>
             <p class="why-text">
-              Europe’s and Florida’s coastal regions continue to attract high-value visitors, underpinned by improving infrastructure and air links.
+              Focus on destinations with proven tourism demand and improving infrastructure rather than speculative locations.
             </p>
           </article>
 
           <article class="why-card">
             <div class="why-icon">∞</div>
-            <h3 class="why-title">Strong Rental Demand</h3>
+            <h3 class="why-title">Strong rental demand</h3>
             <p class="why-text">
-              Modern, design-led apartments sit at the top of local demand, attracting both short-stay visitors and medium-term residents.
+              Contemporary apartments with high finish standards occupy the top end of demand in each neighborhood we select.
             </p>
           </article>
 
           <article class="why-card">
             <div class="why-icon">✶</div>
-            <h3 class="why-title">Lifestyle &amp; Asset</h3>
+            <h3 class="why-title">Lifestyle &amp; asset</h3>
             <p class="why-text">
               Enjoy personal use of your apartment while your asset works for you the rest of the year through carefully managed rentals.
             </p>
@@ -1350,8 +1350,8 @@
         © <span id="year"></span> Matix Estate. All rights reserved.
       </div>
       <div class="footer-links">
-        <a href="#hero">Privacy Policy</a>
-        <a href="#hero">Terms &amp; Conditions</a>
+        <a href="#hero">Privacy policy</a>
+        <a href="#hero">Terms</a>
       </div>
     </div>
   </footer>
@@ -1410,7 +1410,7 @@
       const slides = Array.from(document.querySelectorAll(".slide"));
       const captions = [
         "Main living space with terrace access and coastal-inspired finishes.",
-        "Master bedroom or secondary angle of the main living area.",
+        "Secondary angle or bedroom view, matching the same calm palette."
       ];
       const captionEl = document.getElementById("slideCaption");
       const dotsContainer = document.getElementById("slideDots");
